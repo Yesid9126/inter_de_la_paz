@@ -1,6 +1,8 @@
-# Django
-from django.views.generic import TemplateView
+# # Django
+# from django.views.generic import TemplateView
 
 
-class LandingView(TemplateView):
-    template_name = 'landing/index.html'
+# class LandingViewUSers(TemplateView):
+#     """Landing view."""
+#     template_name = 'users/index.html'
+
