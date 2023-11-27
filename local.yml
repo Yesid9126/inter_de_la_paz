@@ -1,0 +1,51 @@
+version: '3'
+
+volumes:
+  inter_de_la_paz_local_postgres_data: {}
+  inter_de_la_paz_local_postgres_data_backups: {}
+
+services:
+  django:
+    build:
+      context: .
+      dockerfile: ./compose/local/django/Dockerfile
+    image: inter_de_la_paz_local_django
+    container_name: inter_de_la_paz_local_django
+    depends_on:
+      - postgres
+    volumes:
+      - .:/app:z
+    env_file:
+      - ./.envs/.local/.django
+      - ./.envs/.local/.postgres
+    ports:
+      - '8000:8000'
+    command: /start
+
+  postgres:
+    build:
+      context: .
+      dockerfile: ./compose/production/postgres/Dockerfile
+    image: inter_de_la_paz_production_postgres
+    container_name: inter_de_la_paz_local_postgres
+    volumes:
+      - inter_de_la_paz_local_postgres_data:/var/lib/postgresql/data
+      - inter_de_la_paz_local_postgres_data_backups:/backups
+    env_file:
+      - ./.envs/.local/.postgres
+
+  docs:
+    image: inter_de_la_paz_local_docs
+    container_name: inter_de_la_paz_local_docs
+    build:
+      context: .
+      dockerfile: ./compose/local/docs/Dockerfile
+    env_file:
+      - ./.envs/.local/.django
+    volumes:
+      - ./docs:/docs:z
+      - ./config:/app/config:z
+      - ./inter_de_la_paz:/app/inter_de_la_paz:z
+    ports:
+      - '9000:9000'
+    command: /start-docs
