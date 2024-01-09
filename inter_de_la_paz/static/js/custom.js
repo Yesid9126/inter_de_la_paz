@@ -37,8 +37,8 @@
 		dots: false,
 		smartSpeed: 1000,
 		navText: [
-			"<i class='flaticon-left-arrow'></i>",
-			"<i class='flaticon-right-arrow'></i>",
+			"<i class='fa flaticon-left-arrow'></i>",
+			"<i class='fa flaticon-right-arrow'></i>",
 		],
 		responsive:{
 			0: {
@@ -287,11 +287,6 @@
 	}
 	setInterval(function() { makeTimer(); }, 300);
 
-	// Preloader
-	jQuery(window).on('load', function() {
-		$('.preloader').addClass('preloader-deactivate');
-	}) 
-
 	// Subscribe form JS
 	$(".newsletter-form").validator().on("submit", function (event) {
 		if (event.isDefaultPrevented()) {
@@ -351,16 +346,6 @@
 		});
 		wow.init();
 	}
-
-	// Popup Video JS
-	$('.popup-youtube, .popup-vimeo').magnificPopup({
-		disableOn: 300,
-		type: 'iframe',
-		mainClass: 'mfp-fade',
-		removalDelay: 160,
-		preloader: false,
-		fixedContentPos: false,
-	});
 
 	// Gallery Popup JS
 	$('.gallery-popup').each(function() {

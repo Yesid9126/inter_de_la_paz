@@ -41,7 +41,6 @@ This files table contents are outlined below>>>>>
 
 ** - OTHER STYLE AREA - **
 
-** - Preloader Area Style
 ** - Go Top Style
 ** - Video wave Style
 ** - Section Title Area Style
@@ -76,11 +75,6 @@ a {
   color: #333333;
 }
 
-a:hover {
-  text-decoration: none;
-  color: #62bd5e;
-}
-
 a:focus {
   text-decoration: none;
 }
@@ -96,6 +90,10 @@ button {
 button:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+h2.text-description-title {
+  color: #f8f9fa;
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
@@ -246,7 +244,7 @@ Default Btn Area Style*/
   -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s;
   text-align: center;
-  background-color: #62bd5e;
+  background-color: #0407AC ;
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -255,10 +253,6 @@ Default Btn Area Style*/
   border-radius: 4px;
 }
 
-.default-btn:hover {
-  background-color: #1b1b1b;
-  color: #ffffff;
-}
 
 /*
 Read More Btn Area Style*/
@@ -588,11 +582,7 @@ Header Area Style
 }
 
 .top-header.top-header-style-two {
-  background-color: #111111;
-}
-
-.top-header.top-header-style-two .header-left-content li a {
-  color: #ffffff;
+  background-color: #F96009;
 }
 
 .top-header.top-header-style-two .header-right-content .language .language-settings .dropdown-toggle {
@@ -1291,23 +1281,23 @@ Hero Slider Area Style
 }
 
 .hero-slider-area .hero-slider-item.bg-1 {
-  background-image: url(../../assets/images/slider/slider-1.jpg);
+  background-image: url(../images/bg-4.jpg);
 }
 
 .hero-slider-area .hero-slider-item.bg-2 {
-  background-image: url(../../assets/images/slider/slider-2.jpg);
+  background-image: url("../images/bg-4.jpg");
 }
 
 .hero-slider-area .hero-slider-item.bg-3 {
-  background-image: url(../../assets/images/slider/slider-3.jpg);
+  background-image: url(../images/bg-4.jpg);
 }
 
 .hero-slider-area .hero-slider-item.bg-4 {
-  background-image: url(../../assets/images/slider/slider-4.jpg);
+  background-image: url(../images/imagen17.png);
 }
 
 .hero-slider-area .hero-slider-item.bg-5 {
-  background-image: url(../../assets/images/slider/slider-5.jpg);
+  background-image: url(../images/bg-4.jpg);
 }
 
 .hero-slider-area.hero-slider-area-style-two .hero-slider-content {
@@ -1431,7 +1421,7 @@ Hero Slider Area Style
 .hero-slider-content span {
   display: block;
   margin-bottom: 10px;
-  color: #62bd5e;
+  color: #F96009;
 }
 
 .hero-slider-content h1 {
@@ -1444,6 +1434,12 @@ Hero Slider Area Style
   color: #ffffff;
   max-width: 450px;
   margin-bottom: 30px;
+}
+
+.our-personal span {
+  display: block;
+  margin-bottom: 10px;
+  color: #F96009;
 }
 
 /*
@@ -1765,7 +1761,7 @@ About Area Style
 }
 
 .about-img-content h3 span {
-  color: #62bd5e;
+  color: #F96009;
 }
 
 .about-img-content .video {
@@ -2310,7 +2306,7 @@ What We Offer Area Style
 }
 
 .appointment-area.appointment-area-style-two .appointment-img-2 {
-  background-image: url(../../assets/images/appointment-img-2.jpg);
+  background-image: url(../images/imagen16.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2918,6 +2914,10 @@ FAQ Area CSS
   margin-bottom: 15px;
 }
 
+.about-content ul .accordion-item::before {
+  content: none; /* Esto elimina el contenido del seudoelemento */
+}
+
 .faq-accordion .accordion .accordion-item:last-child {
   margin-bottom: 0;
 }
@@ -3415,7 +3415,7 @@ Partner Area Style
 Footer Area Style
 ======================================================*/
 .footer-area {
-  background-color: #111111;
+  background-color: #F96009;
 }
 
 .single-footer-widget {
@@ -3513,7 +3513,7 @@ Footer Area Style
 
 .single-footer-widget .address li i {
   position: absolute;
-  color: #62bd5e;
+  color: #0407AC;
   left: 0;
   top: 5px;
   font-size: 25px;
@@ -3525,7 +3525,7 @@ Footer Area Style
 }
 
 .single-footer-widget .address li a:hover {
-  color: #62bd5e;
+  color: #f8fdf5;
 }
 
 .single-footer-widget .address li:last-child {
@@ -3610,7 +3610,7 @@ Copy Right Area Style
 }
 
 .copy-right-area p a {
-  color: #62bd5e;
+  color: #ec997b;
 }
 
 .copy-right-area p a:hover {
@@ -6380,155 +6380,7 @@ Product Details Area Style
 /*====================================================
 OTHERS STYLE AREA
 =====================================================*/
-/*
-Preloader Area Style*/
-.preloader {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  background-color: #000000;
-  top: 0;
-  left: 0;
-  z-index: 99999;
-}
 
-.preloader .lds-ripple {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 100px;
-  height: 100px;
-  -webkit-transform: translate(-50px, -50px);
-          transform: translate(-50px, -50px);
-}
-
-.preloader .loader-inner-1 {
-  display: block;
-  width: 20px;
-  height: 20px;
-  border-radius: 20px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  -webkit-transform: rotate(70deg);
-          transform: rotate(70deg);
-}
-
-.preloader .loader-inner-1:before {
-  content: "";
-  display: block;
-  width: 20px;
-  height: 20px;
-  border-radius: 20px;
-  position: absolute;
-  right: 0;
-  -webkit-animation-name: loading-1;
-          animation-name: loading-1;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: normal;
-          animation-direction: normal;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  background: #06aed5;
-}
-
-.preloader .loader-inner-2 {
-  display: block;
-  width: 20px;
-  height: 20px;
-  border-radius: 20px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  -webkit-transform: rotate(160deg);
-          transform: rotate(160deg);
-}
-
-.preloader .loader-inner-2:before {
-  content: "";
-  display: block;
-  width: 20px;
-  height: 20px;
-  border-radius: 20px;
-  position: absolute;
-  right: 0;
-  -webkit-animation-name: loading-1;
-          animation-name: loading-1;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: normal;
-          animation-direction: normal;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  background: #ec008c;
-}
-
-.preloader .loader-inner-3 {
-  display: block;
-  width: 20px;
-  height: 20px;
-  border-radius: 20px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  -webkit-transform: rotate(-110deg);
-          transform: rotate(-110deg);
-}
-
-.preloader .loader-inner-3:before {
-  content: "";
-  display: block;
-  width: 20px;
-  height: 20px;
-  border-radius: 20px;
-  position: absolute;
-  right: 0;
-  -webkit-animation-name: loading-1;
-          animation-name: loading-1;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: normal;
-          animation-direction: normal;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  background: #ffbf00;
-}
-
-.preloader .loader-inner-4 {
-  display: block;
-  width: 20px;
-  height: 20px;
-  border-radius: 20px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  -webkit-transform: rotate(-20deg);
-          transform: rotate(-20deg);
-}
-
-.preloader .loader-inner-4:before {
-  content: "";
-  display: block;
-  width: 20px;
-  height: 20px;
-  border-radius: 20px;
-  position: absolute;
-  right: 0;
-  -webkit-animation-name: loading-1;
-          animation-name: loading-1;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: normal;
-          animation-direction: normal;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  background: #079c00;
-}
-
-.preloader.preloader-deactivate {
-  visibility: hidden;
-}
 
 @-webkit-keyframes loading-1 {
   0% {
