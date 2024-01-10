@@ -1,7 +1,9 @@
+# Django
 from django.contrib.auth.models import AbstractUser
 from django.db.models import CharField, EmailField
 from django.urls import reverse
 from django.utils.translation import gettext_lazy as _
+from django.db import models
 
 from inter_de_la_paz.users.managers import UserManager
 
@@ -33,3 +35,23 @@ class User(AbstractUser):
 
         """
         return reverse("users:detail", kwargs={"pk": self.id})
+
+
+class Profile(models.Model):
+    """Profile model."""
+
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    phone_number = models.CharField(max_length=20)
+    eps = models.CharField(max_length=255)
+    from_team = models.CharField(max_length=255)
+    age = models.PositiveIntegerField()
+
+    def __str__(self):
+        """Return users name."""
+        return f"Profile for {self.user.name}"
+
+    class Meta:
+        """Meta class."""
+
+        verbose_name = "Perfil de usuario"
+        verbose_name_plural = "Perfiles de usuarios"

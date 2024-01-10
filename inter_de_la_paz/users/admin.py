@@ -6,7 +6,15 @@ from django.utils.translation import gettext_lazy as _
 
 from inter_de_la_paz.users.forms import UserAdminChangeForm, UserAdminCreationForm
 
+# Models
+from inter_de_la_paz.users.models import Profile
+
 User = get_user_model()
+
+
+class ProfileInline(admin.StackedInline):
+    model = Profile
+    extra = 0
 
 
 @admin.register(User)
@@ -42,3 +50,5 @@ class UserAdmin(auth_admin.UserAdmin):
             },
         ),
     )
+    list_display = ["name", "email", "date_joined"]
+    inlines = [ProfileInline]
