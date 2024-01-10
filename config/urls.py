@@ -7,6 +7,4 @@ urlpatterns = [
     path(settings.ADMIN_URL, admin.site.urls),
     # User management
     path("", include("inter_de_la_paz.landing.urls", namespace="landing")),
-    #path("users", include("inter_de_la_paz.users.urls", namespace="users")),
-    # Your stuff: custom urls includes go here
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

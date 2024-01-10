@@ -2,17 +2,17 @@
 
 	'use strict';
 	// Mean Menu JS
-	jQuery('.mean-menu').meanmenu({ 
+	jQuery('.mean-menu').meanmenu({
 		meanScreenWidth: "991"
 	});
 
 	// Nice Select JS
 	$('select').niceSelect();
-	
+
 	// Header Sticky, Go To Top JS
 	$(window).on('scroll', function() {
 		// Header Sticky JS
-		if ($(this).scrollTop() >150){  
+		if ($(this).scrollTop() >150){
 			$('.navbar-area').addClass("is-sticky");
 		}
 		else{
@@ -248,7 +248,7 @@
 			},
 		},
 	});
-	
+
 	// Click Event JS
 	$('.go-top').on('click', function() {
 		$("html, body").animate({ scrollTop: "0" },  1000);
@@ -263,17 +263,17 @@
 		// Hide The Other Panels
 		$('.accordion-content').not($(this).next()).slideUp('fast');
 		// Removes Active Class From Other Titles
-		$('.accordion-title').not($(this)).removeClass('active');		
+		$('.accordion-title').not($(this)).removeClass('active');
 	});
 
 	// Count Time JS
 	function makeTimer() {
-		var endTime = new Date("november  30, 2021 17:00:00 PDT");			
+		var endTime = new Date("november  30, 2021 17:00:00 PDT");
 		var endTime = (Date.parse(endTime)) / 1000;
 		var now = new Date();
 		var now = (Date.parse(now) / 1000);
 		var timeLeft = endTime - now;
-		var days = Math.floor(timeLeft / 86400); 
+		var days = Math.floor(timeLeft / 86400);
 		var hours = Math.floor((timeLeft - (days * 86400)) / 3600);
 		var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600 )) / 60);
 		var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
@@ -327,7 +327,7 @@
 		}
 		$("#validator-newsletter, #validator-newsletter-2").removeClass().addClass(msgClasses).text(msg);
 	}
-	
+
 	// AJAX MailChimp JS
 	$(".newsletter-form").ajaxChimp({
 		url: "https://Envy Theme.us20.list-manage.com/subscribe/post?u=60e1ffe2e8a68ce1204cd39a5&amp;id=42d6d188d9", // Your url MailChimp
@@ -350,7 +350,7 @@
 	// Gallery Popup JS
 	$('.gallery-popup').each(function() {
 		$(this).magnificPopup({
-			delegate: 'a', 
+			delegate: 'a',
 			type: 'image',
 			gallery: {
 			  enabled:true
@@ -382,7 +382,7 @@
 	var thumbs = $("#thumbs");
 	// Var Totalslides = 10;
 	var syncedSecondary = true;
-	
+
 	bigimage
 		.owlCarousel({
 		items: 1,
@@ -398,7 +398,7 @@
 		]
 	})
 	.on("changed.owl.carousel", syncPosition);
-	
+
 	thumbs
 		.on("initialized.owl.carousel", function() {
 		thumbs
@@ -420,15 +420,15 @@
 		responsiveRefreshRate: 100
 	})
 	.on("changed.owl.carousel", syncPosition2);
-	
+
 	function syncPosition(el) {
 		//if loop is set to false, then you have to uncomment the next line
 		//var current = el.item.index;
-	
+
 		//to disable loop, comment this block
 		var count = el.item.count - 1;
 		var current = Math.round(el.item.index - el.item.count / 2 - 0.5);
-	
+
 		if (current < 0) {
 			current = count;
 		}
@@ -451,7 +451,7 @@
 		.find(".owl-item.active")
 		.last()
 		.index();
-	
+
 		if (current > end) {
 			thumbs.data("owl.carousel").to(current, 100, true);
 		}
@@ -479,7 +479,7 @@
 		btnDown = spinner.find('.minus-btn'),
 		min = input.attr('min'),
 		max = input.attr('max');
-		
+
 		btnUp.on('click', function() {
 			var oldValue = parseFloat(input.val());
 			if (oldValue >= max) {

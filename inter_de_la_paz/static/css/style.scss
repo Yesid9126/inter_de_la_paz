@@ -6,7 +6,7 @@ is the file you need to edit to change the look of the template.
 
 This files table contents are outlined below>>>>>
 
-*******************************************  
+*******************************************
 ** - DEFAULT AREA STYLE - **
 
 ** - Default Btn Area Style
@@ -92,7 +92,7 @@ a {
 	}
 }
 button {
-    outline: 0 !important; 
+    outline: 0 !important;
 	box-shadow: none;
 	border: none;
 	padding: 0;
@@ -122,7 +122,7 @@ p {
 	&:last-child {
         margin-bottom: 0;
     }
-} 
+}
 img {
     max-width: 100%;
     height: auto;
@@ -152,7 +152,7 @@ img {
         box-shadow: unset;
     }
 }
-textarea {   
+textarea {
     &.form-control {
         height: auto;
     }
@@ -263,7 +263,7 @@ Section Title Area Style*/
 	}
 	h2 {
 		font-size: 40px;
-		margin-bottom: 20px; 
+		margin-bottom: 20px;
 		position: relative;
 		&:last-child {
 			margin-bottom: 0;
@@ -338,7 +338,7 @@ Header Area Style
 			display: inline-block;
 			position: relative;
 			top: 2px;
-		
+
 			li {
 				display: inline-block;
 				margin-right: 10px;
@@ -465,7 +465,7 @@ Header Area Style
 						transform: scaleX(1) !important;
 					}
 				}
-				
+
 			}
 		}
 		.my-account {
@@ -1378,7 +1378,7 @@ Expertise Area Style
 			color: $white-color;
 			font-size: 20px;
 			margin-bottom: 0;
-			
+
 		}
 	}
 	.expertise-content {
@@ -1882,7 +1882,7 @@ What We Offer Area Style
 						background-color: $main-color;
 					}
 				}
-				
+
 			}
 		}
 	}
@@ -2208,7 +2208,7 @@ What We Offer Area Style
 		&:hover {
 			background-color: $main-color;
 		}
-		
+
 	}
 	.next {
 		background-color: #f2f9fc;
@@ -2376,7 +2376,7 @@ Team Area Style
 						background-color: $main-color;
 					}
 				}
-				
+
 			}
 		}
 	}
@@ -2574,7 +2574,7 @@ Testimonial Area Style
 			margin-bottom: 30px;
 		}
 		.writer-name {
-			
+
 			h3 {
 				font-size: 18px;
 				color: $white-color;
@@ -2687,7 +2687,7 @@ Healthy Life Area Style
 		bottom: 0;
 		right: 0;
 		z-index: -1;
-		
+
 	}
 	&.healthy-life-area-style-two {
 		.healthy-life-content {
@@ -2753,9 +2753,9 @@ Healthy Life Area Style
 	}
 }
 
-/* 
+/*
 Pricing Area Style
-=====================================================*/ 
+=====================================================*/
 .pricing-area {
 	&.pricing-area-style-three {
 		position: relative;
@@ -2771,7 +2771,7 @@ Pricing Area Style
 			z-index: -1;
 		}
 		.single-pricing-box {
-			.pricing-title { 
+			.pricing-title {
 				background-color: #f9faff;
 				border-color: #f9faff;
 				h1 {
@@ -2943,7 +2943,7 @@ Our News Area Style
 						background-color: $main-color;
 					}
 				}
-				
+
 			}
 		}
 		.single-news {
@@ -3230,9 +3230,9 @@ Copy Right Area Style
 INNER PAGES STYLE AREA
 ======================================================*/
 
-/* 
+/*
 Page Title Area Style
-=====================================================*/ 
+=====================================================*/
 .page-title-area {
 	padding-top: 100px;
 	padding-bottom: 100px;
@@ -3286,7 +3286,7 @@ Page Title Area Style
 				}
 			}
 		}
-	}	
+	}
 }
 
 /*
@@ -3417,7 +3417,7 @@ Contact Info Area Style
 			margin-bottom: 0;
 		}
 	}
-	
+
 	&:hover {
 		i {
 			background-color: $main-color;
@@ -3427,9 +3427,9 @@ Contact Info Area Style
 	}
 }
 
-/* 
+/*
 Main Contact Area Style
-=====================================================*/ 
+=====================================================*/
 .main-contact-area {
 	#contactForm {
 		max-width: 810px;
@@ -3500,9 +3500,9 @@ Main Contact Area Style
 	}
 }
 
-/* 
+/*
 Map Area Style
-=====================================================*/ 
+=====================================================*/
 .map-area {
 	iframe {
 		height: 480px;
@@ -3556,9 +3556,9 @@ Terms And Conditions Style
 	}
 }
 
-/* 
+/*
 News Details Content Style
-=====================================================*/ 
+=====================================================*/
 .news-details-content {
 	.news-details-img {
 		margin-bottom: 30px;
@@ -3720,7 +3720,7 @@ News Details Content Style
 					}
 				}
 			}
-		}	
+		}
 		&:hover {
 			.social-icon  {
 				top: 46px;
@@ -3759,9 +3759,9 @@ News Details Content Style
 	}
 }
 
-/* 
+/*
 Sidebar Widget Style
-=====================================================*/ 
+=====================================================*/
 .widget-sidebar {
 	margin-left: 15px;
 }
@@ -3931,9 +3931,9 @@ Sidebar Widget Style
 	}
 }
 
-/* 
+/*
 News List Style
-=====================================================*/ 
+=====================================================*/
 .news-list-area {
 	.single-news {
 		padding: 0;
@@ -3941,9 +3941,9 @@ News List Style
 	}
 }
 
-/* 
+/*
 Services Details Style
-=====================================================*/ 
+=====================================================*/
 .services-details-area {
 	padding-bottom: 40px;
 	.sidebar-widget.search {
@@ -4005,7 +4005,7 @@ Product Area Style
 .showing-result {
 	margin-bottom: 30px;
 	margin-right: 15px;
-	background-color: $white-color; 
+	background-color: $white-color;
 	padding: 10px;
 	.showing-top-bar-ordering {
 		text-align: right;
@@ -4358,7 +4358,7 @@ product-view-one
 								background: green;
 							}
 						}
-						
+
 						a.color-yellowgreen {
 							&::before {
 								background: yellowgreen;
@@ -4539,9 +4539,9 @@ product-view-one
 	}
 	.owl-theme {
 		.owl-nav {
-			margin-top: 0 !important; 
+			margin-top: 0 !important;
 		}
-	} 
+	}
 	.owl-theme .owl-nav [class*=owl-]:hover {
 		background-color: transparent;
 	}
@@ -4755,7 +4755,7 @@ Shopping Cart Area Style
 	}
 }
 
-/* 
+/*
 Checkout Area Style
 =====================================================*/
 .checkout-area {
@@ -5705,7 +5705,7 @@ Go Top Style*/
 		visibility: visible;
 		right: 3%;
 		top: 87%;
-	} 
+	}
 }
 
 /*

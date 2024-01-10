@@ -1,530 +1,524 @@
 {% load static %}
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="zxx">
-    <head>
-		<!-- Required meta tags -->
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link rel="icon" href="{% static 'images/inter_5.png' %}">
-		<link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="icon" href="{% static 'images/inter_5.png' %}" />
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+    <!-- Bootstrap Min CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
+    <!-- Owl Theme Default Min CSS -->
+    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}" />
+    <!-- Owl Carousel Min CSS -->
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}" />
+    <!-- Boxicons Min CSS -->
+    <link rel="stylesheet" href="{% static 'css/boxicons.min.css' %}" />
+    <!-- Flaticon CSS -->
+    <link rel="stylesheet" href="{% static 'css/flaticon.css' %}" />
+    <!-- Meanmenu Min CSS -->
+    <link rel="stylesheet" href="{% static 'css/meanmenu.min.css' %}" />
+    <!-- Animate Min CSS -->
+    <link rel="stylesheet" href="{% static 'css/animate.min.css' %}" />
+    <!-- Nice Select Min CSS -->
+    <link rel="stylesheet" href="{% static 'css/nice-select.min.css' %}" />
+    <!-- Date Picker CSS-->
+    <link rel="stylesheet" href="{% static 'css/date-picker.min.css' %}" />
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}" />
+    <!-- Title -->
+    <title>Corporación inter</title>
+  </head>
+  <body>
+    <!-- Start Header Area -->
+    <header class="header-area">
+      <!-- Start Navbar Area -->
+      <div class="navbar-area navbar-area-style-two">
+        <div class="mobile-nav">
+          <div class="container">
+            <div class="mobile-menu">
+              <div class="logo">
+                <a class="navbar-logo" href="/">
+                  <img src="{% static 'images/inter_5.png' %}" style= "max-height:60px" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="desktop-nav">
+          <div class="container">
+            <nav class="navbar navbar-expand-md navbar-light">
+              <a class="navbar-logo" href="/">
+                <img src="{% static 'images/inter_5.png' %}" style= "max-height:120px" />
+              </a>
+              <div class="collapse navbar-collapse mean-menu">
+                <ul class="navbar-nav m-auto">
+                  <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#features" class="nav-link">Quiénes Somos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#competition" class="nav-link">Competencias</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#team" class="nav-link">Nuestro equipo</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#contacts" class="nav-link">Contact Us</a>
+                  </li>
+                </ul>
+                <div class="others-option">
+                  <div class="get-quote">
+                    <a href="#signup" class="default-btn">Regístrate</a>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <!-- End Navbar Area -->
+    </header>
+    <!-- End Header Area -->
+    <!-- Start Hero Slider Area -->
+    <section class="hero-slider-area hero-slider-area-style-two" id="home">
+      <div class="hero-slider-style-two owl-carousel owl-theme">
+        <div class="hero-slider-item bg-4">
+          <div class="d-table">
+            <div class="d-table-cell">
+              <div class="container">
+                <div class="hero-slider-content">
+                  <span>Bienvenido</span>
+                  <h1>Club Deportivo Corporación Inter</h1>
+                  <p>
+                    Te damos la bienvenida a la coporación inter, un club deportivo enfocado en el crecimiento de deportistas y personas a traves del fútbol.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Hero Slider Area -->
+    <!-- Start Expertise Area -->
+    <section class="expertise-area expertise-area-style-two pt-100 pb-70"
+             id="features">
+      <div class="container">
+        <div class="section-title">
+          <h2>Quiénes somos</h2>
+          <p>
+            Somos un club de fútbol dedicado a la detección, selección y formación deportiva de jugadores de fútbol con el fin de proveer deportistas capacitados para afrontar los retos del fútbol. Aportamos a la vida desarrollando una labor social brindando una transformación del ser humano a través de principios, valores éticos y deportivos.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- End Expertise Area -->
+    <!-- Start About Us Area -->
+    <section class="about-us-area about-us-area-style-two bg-color-two ptb-100"
+             id="competition">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="about-img-content">
+              <div class="about-img-1">
+                <img src="{% static 'images/imagen9-1.png' %}" alt="Image" />
+                <div class="about-img-2">
+                  <img src="{% static 'images/bg4-1.png' %}" alt="Image" />
+                </div>
+              </div>
+              <h3>
+                <span>+5</span> Años de experiencia
+              </h3>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="about-content">
+              <h2>Cantera de campeones.</h2>
+              <h4>Nuestros valores institucionales.</h4>
+              <div class="faq-accordion">
+                <ul class="accordion">
+                  <li class="accordion-item">
+                    <a class="accordion-title" href="javascript:void(0)">
+                      <i class="bx bx-chevron-down"></i>
+                      Disciplina
+                    </a>
+                    <div class="accordion-content" style="display: none;">
+                      <p>
+                        Es un valor moral que contiene reglas y principios de comportamiento relativos al orden y la constancia posibilitando un mejor desarrollo del ser.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="accordion-item">
+                    <a class="accordion-title" href="javascript:void(0)">
+                      <i class="bx bx-chevron-down"></i>
+                      Compromiso
+                    </a>
+                    <div class="accordion-content" style="display: none;">
+                      <p>
+                        El sentirnos comprometidos con una disciplina deportiva significa la capacidad que tenemos para tomar consciencia sobre la importancia de cumplir.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="accordion-item">
+                    <a class="accordion-title" href="javascript:void(0)">
+                      <i class="bx bx-chevron-down"></i>
+                      Mentalidad
+                    </a>
+                    <div class="accordion-content" style="display: none;">
+                      <p>Comportamiento mental que fija una estructura sólida y congruente hacia sus propósitos u objetivo deportivo.</p>
+                    </div>
+                  </li>
+                  <li class="accordion-item">
+                    <a class="accordion-title" href="javascript:void(0)">
+                      <i class="bx bx-chevron-down"></i>
+                      Carácter
+                    </a>
+                    <div class="accordion-content">
+                      <p>
+                        Cualidad natural que distingue el ser humano frente a los demás en donde refleja y direcciona su energía en actitud frente a diferentes situaciones.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="accordion-item">
+                    <a class="accordion-title" href="javascript:void(0)">
+                      <i class="bx bx-chevron-down"></i>
+                      Respeto
+                    </a>
+                    <div class="accordion-content">
+                      <p>Ala ley y normas que rigen el deporte como también a sus semejantes.</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <h3 class="mt-3">Nuestras categorías y torneos</h3>
+              <div class="row">
+                <div class="col-lg-6 col-sm-6">
+                  <ul class="mb-20">
+                    <li>Femenino</li>
+					<li>Juvenil (2005)</li>
+                    <li>Sub - 15 (2009-2010)</li>
+                    <li>Sub - 17 (2006, 2007, 2008)</li>
+                  </ul>
+                </div>
+                <div class="col-lg-6 col-sm-6">
+                  <ul>
+                    <li>Liga antioqueña de fútbol juvenil</li>
+                    <li>Liga antioqueña de fútbol sub-17</li>
+                    <li>Torneo comité envigado femenino</li>
+                    <li>Torneo comité envigado masculino juvenil</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End About Us Area -->
+    <!-- Start What We Offer Area -->
+    <section class="what-we-offer-area what-we-offer-area-style-two pt-100 pb-70"
+             id="team">
+      <div class="container">
+        <div class="our-personal">
+          <span>Equipo</span>
+          <h2>Nuestros entrenadores</h2>
+        </div>
+        <div class="owl-carousel owl-theme what-we-offer-slider">
+          <div class="single-what-we-offer">
+            <a>
+              <img src="{% static 'images/jhony.jpg' %}" alt="Image" />
+            </a>
+            <div class="what-we-offer-content">
+              <h3>
+                <a>Jhony franco</a>
+              </h3>
+              <p>
+                Entrenador deportivo con una experiencia de mas de 9 años de experiencia, técnico en entrenamiento deportivo, licencia c de entrenadores de futbol, curso en administraciíon deportiva, diplomados de personal trainer, desarrollo humano, actividad física y musculación, actualmente 8 semestre de profesional en deportes.
+              </p>
+            </div>
+          </div>
+          <div class="single-what-we-offer">
+            <a>
+              <img src="{% static 'images/guti.jpg' %}" alt="Image" />
+            </a>
+            <div class="what-we-offer-content">
+              <h3>
+                <a>David gutiérrez</a>
+              </h3>
+              <p>
+                Entrenador en formación deportiva y competencia, técnico en entrenamiento deportivo, diplomados de fisiología en el deporte, iniciación y formación deportiva, actualmente 9 semestre en profesional en deportes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End What We Offer Area -->
+    <!-- Start Appointment Area -->
+    <section class="appointment-area appointment-area-style-two" id="signup">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6 pl-0">
+            <div class="appointment-img-2"></div>
+          </div>
+          <div class="col-lg-6">
+            <div class="appointment-action ptb-100">
+              <form method="post" id="form-signup">
+                {% csrf_token %}
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <input type="text"
+                             class="form-control"
+                             id="name"
+                             name="name"
+                             placeholder="Nombres y apellidos"
+                             required />
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <input type="text"
+                             class="form-control"
+                             id="phone"
+                             name="phone"
+                             placeholder="Número teléfono"
+                             minlength="10"
+                             maxlength="10"
+                             required />
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <input type="email"
+                             class="form-control"
+                             id="email"
+                             name="email"
+                             placeholder="Email" />
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <input type="text"
+                             class="form-control"
+                             id="eps"
+                             name="eps"
+                             placeholder="Eps" />
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <input type="number"
+                             class="form-control"
+                             id="age"
+                             name="age"
+                             placeholder="Edad"
+                             required
+                             min="0" />
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <input type="text"
+                             class="form-control"
+                             id="from-team"
+                             name="from-team"
+                             placeholder="De qué equipo vienes?" />
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="default-btn">Regístrate</button>
+                  </div>
+                  <h2>Entrena con nosotros</h2>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Appointment Area -->
+    <!-- Start Team Area -->
+    <section class="team-area pt-100 pb-70">
+      <div class="container">
+        <div class="our-personal">
+          <span class="top-title">Nuestros deportistas</span>
+          <h2>Deportistas</h2>
+        </div>
+        <div class="owl-carousel owl-theme team-slider">
+          <div class="single-team">
+            <div class="team-img">
+              <img src="{% static 'images/imagen7.png' %}" alt="Image" />
+              <ul class="team-link">
+                <li>
+                  <a href="https://www.instagram.com/club_inter_envigado/">
+                    <i class="bx bxl-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="single-team">
+            <div class="team-img">
+              <img src="{% static 'images/imagen5.png' %}" alt="Image" />
+              <ul class="team-link">
+                <li>
+                  <a href="https://www.instagram.com/club_inter_envigado/">
+                    <i class="bx bxl-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="single-team">
+            <div class="team-img">
+              <img src="{% static 'images/imagen4.png' %}" alt="Image" />
+              <ul class="team-link">
+                <li>
+                  <a href="https://www.instagram.com/club_inter_envigado/">
+                    <i class="bx bxl-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="single-team">
+            <div class="team-img">
+              <img src="{% static 'images/jugador1.png' %}" alt="Image" />
+              <ul class="team-link">
+                <li>
+                  <a href="https://www.instagram.com/club_inter_envigado/">
+                    <i class="bx bxl-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Team Area -->
+    <!-- Start Footer Area -->
+    <footer class="footer-area pt-100 pb-70" id="contacts">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="single-footer-widget">
+              <ul class="open-close">
+                <li>
+                  <span>Horarios de entreno:</span>
+                </li>
+                <li>Lunes: 4:00 PM - 6:00 PM</li>
+                <li>Martes: 8:00 PM - 9:00 PM</li>
+                <li>Jueves: 8:00 PM - 9:00 PM</li>
+              </ul>
+              <ul class="social-icon">
+                <li>
+                  <span>Síguenos:</span>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/club_inter_envigado/" target="_blank">
+                    <i class="bx bxl-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="single-footer-widget">
+              <h3>Contáctanos</h3>
+              <ul class="address">
+                <li>
+                  <i class="bx bx-envelope"></i>
+                  <a href="mailto:cdinterenvigado@gmail.com">cdinterenvigado@gmail.com</a>
+                </li>
+                <li>
+                  <i class="bx bx-phone"></i>
+                  <p>+57 324 739 6334</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer Area -->
+    <div class="copy-right-area">
+      <div class="container">
+        <p>2024 © Corporación inter ❤️⚽</p>
+        <p>
+          Creado por: <a href="https://github.com/Yesid9126" target="_blank">Yesid Franco</a>
+        </p>
+      </div>
+    </div>
+    <!-- Jquery Min JS -->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <!-- Bootstrap Bundle Min JS -->
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    <!-- Meanmenu Min JS -->
+    <script src="{% static 'js/meanmenu.min.js' %}"></script>
+    <!-- Owl Carousel Min JS -->
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <!-- Wow Min JS -->
+    <script src="{% static 'js/wow.min.js' %}"></script>
+    <!-- Nice Select Min JS -->
+    <script src="{% static 'js/nice-select.min.js' %}"></script>
+    <!-- Magnific Popup Min JS -->
+    <script src="{% static 'js/magnific-popup.min.js' %}"></script>
+    <!-- Mixitup Min JS -->
+    <script src="{% static 'js/mixitup.min.js' %}"></script>
+    <!-- Datepicker Min JS -->
+    <script src="{% static 'js/bootstrap-datepicker.min.js' %}"></script>
+    <!-- Form Validator Min JS -->
+    <script src="{% static 'js/form-validator.min.js' %}"></script>
+    <!-- Contact JS -->
+    <script src="{% static 'js/contact-form-script.js' %}"></script>
+    <!-- Ajaxchimp Min JS -->
+    <script src="{% static 'js/ajaxchimp.min.js' %}"></script>
+    <!-- Custom JS -->
+    <script src="{% static 'js/custom.js' %}"></script>
+    <!-- Asegúrate de incluir la referencia a sweetalert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <!-- Agrega este script para manejar la presentación de la alerta -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const form = document.getElementById('form-signup');
+        form.addEventListener('submit', function(event) {
+          event.preventDefault();
 
-		<!-- Bootstrap Min CSS --> 
-		<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
-		<!-- Owl Theme Default Min CSS --> 
-		<link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
-		<!-- Owl Carousel Min CSS --> 
-		<link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
-		<!-- Boxicons Min CSS --> 
-		<link rel="stylesheet" href="{% static 'css/boxicons.min.css' %}"> 
-		<!-- Flaticon CSS --> 
-		<link rel="stylesheet" href="{% static 'css/flaticon.css' %}">
-		<!-- Meanmenu Min CSS -->
-		<link rel="stylesheet" href="{% static 'css/meanmenu.min.css' %}">
-		<!-- Animate Min CSS --> 
-		<link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
-		<!-- Nice Select Min CSS -->
-		<link rel="stylesheet" href="{% static 'css/nice-select.min.css' %}">
-		<!-- Date Picker CSS-->
-		<link rel="stylesheet" href="{% static 'css/date-picker.min.css' %}">
-		<!-- Style CSS -->
-		<link rel="stylesheet" href="{% static 'css/style.css' %}">
-		<!-- Responsive CSS -->
-		<link rel="stylesheet" href="{% static 'css/responsive.css' %}">
-		<!-- Title -->
-		<title>Corporación inter</title>
-    </head>
-
-    <body>
-		<!-- Start Header Area -->
-		<header class="header-area">
-			<!-- Start Navbar Area -->
-			<div class="navbar-area navbar-area-style-two">
-				<div class="mobile-nav">
-					<div class="container">
-						<div class="mobile-menu">
-							<div class="logo">
-								<a class="navbar-logo" href="/">
-									<img src="{% static 'images/inter_5.png' %}" style= "max-height:60px">
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-	
-				<div class="desktop-nav">
-					<div class="container">
-						<nav class="navbar navbar-expand-md navbar-light">
-							<a class="navbar-logo" href="/">
-								<img src="{% static 'images/inter_5.png' %}" style= "max-height:120px">
-							</a>
-							<div class="collapse navbar-collapse mean-menu">
-								<ul class="navbar-nav m-auto">
-									<li class="nav-item">
-										<a href="#home" class="nav-link">Home</a>
-									</li>
-
-									<li class="nav-item">
-										<a href="#features" class="nav-link">Quiénes Somos</a>
-									</li>
-
-									<li class="nav-item">
-										<a href="#competition" class="nav-link">Competencias</a>
-									</li>
-
-									<li class="nav-item">
-										<a href="#team" class="nav-link">Nuestro equipo</a>
-									</li>
-
-									<li class="nav-item">
-										<a href="#contacts" class="nav-link">Contact Us</a>
-									</li>
-								</ul>
-								
-								<div class="others-option">
-									<div class="get-quote">
-										<a href="#signup" class="default-btn">
-											Regístrate
-										</a>
-									</div>
-								</div>
-							</div>
-						</nav>
-					</div>
-				</div>
-			</div>
-			<!-- End Navbar Area -->
-		</header>
-		<!-- End Header Area -->
-
-		<!-- Start Hero Slider Area -->
-		<section class="hero-slider-area hero-slider-area-style-two" id="home">
-			<div class="hero-slider-style-two owl-carousel owl-theme">
-				<div class="hero-slider-item bg-4">
-					<div class="d-table">
-						<div class="d-table-cell">
-							<div class="container">
-								<div class="hero-slider-content">
-									<span>Bienvenido</span>
-									<h1>Club Deportivo Corporación Inter</h1>
-									<p>Te damos la bienvenida a la coporación inter, un club deportivo enfocado en el crecimiento de deportistas y personas a traves del fútbol.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- End Hero Slider Area -->
-
-		<!-- Start Expertise Area -->
-		<section class="expertise-area expertise-area-style-two pt-100 pb-70" id="features">
-			<div class="container">
-				<div class="section-title">
-					<h2>Quiénes somos</h2>
-					<p>Somos un club de fútbol dedicado a la detección, selección y formación deportiva de jugadores de fútbol con el fin de proveer deportistas capacitados para afrontar los retos del fútbol. Aportamos a la vida desarrollando una labor social brindando una transformación del ser humano a través de principios, valores éticos y deportivos.</p>
-				</div>
-			</div>
-		</section>
-		<!-- End Expertise Area -->
-
-		<!-- Start About Us Area -->
-		<section class="about-us-area about-us-area-style-two bg-color-two ptb-100" id="competition">
-			<div class="container">
-				<div class="row align-items-center">
-					<div class="col-lg-6">
-						<div class="about-img-content">
-							<div class="about-img-1">
-								<img src="{% static 'images/imagen9-1.png' %}" alt="Image">
-								<div class="about-img-2">
-									<img src="{% static 'images/bg4-1.png' %}" alt="Image">
-								</div>
-							</div>
-
-							<h3><span>+5</span> Años de experiencia</h3>
-						</div>
-					</div>
-
-					<div class="col-lg-6">
-						<div class="about-content">
-							<h2>Cantera de campeones.</h2>
-							<h4>Nuestros valores institucionales.</h4>
-							<div class="faq-accordion">
-								<ul class="accordion">
-									<li class="accordion-item">
-										<a class="accordion-title" href="javascript:void(0)">
-											<i class="bx bx-chevron-down"></i>
-											Disciplina
-										</a>
-		
-										<div class="accordion-content" style="display: none;">
-											<p>Es un valor moral que contiene reglas y principios de comportamiento relativos al orden y la constancia posibilitando un mejor desarrollo del ser.</p>
-										</div>
-									</li>
-	
-									<li class="accordion-item">
-										<a class="accordion-title" href="javascript:void(0)">
-											<i class="bx bx-chevron-down"></i>
-											Compromiso
-										</a>
-		
-										<div class="accordion-content" style="display: none;">
-											<p>El sentirnos comprometidos con una disciplina deportiva significa la capacidad que tenemos para tomar consciencia sobre la importancia de cumplir.</p>
-										</div>
-									</li>
-	
-									<li class="accordion-item">
-										<a class="accordion-title" href="javascript:void(0)">
-											<i class="bx bx-chevron-down"></i>
-											Mentalidad
-										</a>
-		
-										<div class="accordion-content" style="display: none;">
-											<p>Comportamiento mental que fija una estructura sólida y congruente hacia sus propósitos u objetivo deportivo.</p>
-										</div>
-									</li>
-	
-									<li class="accordion-item">
-										<a class="accordion-title" href="javascript:void(0)">
-											<i class="bx bx-chevron-down"></i>
-											Carácter
-										</a>
-		
-										<div class="accordion-content">
-											<p>Cualidad natural que distingue el ser humano frente a los demás en donde refleja y direcciona su energía en actitud frente a diferentes situaciones.</p>
-										</div>
-									</li>
-									
-									<li class="accordion-item">
-										<a class="accordion-title" href="javascript:void(0)">
-											<i class="bx bx-chevron-down"></i>
-											Respeto
-										</a>
-		
-										<div class="accordion-content">
-											<p>Ala ley y normas que rigen el deporte como también a sus semejantes.</p>
-										</div>
-									</li>
-								</ul>
-							</div>
-
-							<h3 class="mt-3">Nuestras categorías y torneos</h3>
-
-							<div class="row">
-								<div class="col-lg-6 col-sm-6">
-									<ul class="mb-20">
-										<li>Juvenil</li>
-										<li>Femenino</li>
-										<li>Sub- 15</li>
-										<li>Sub - 17</li>
-									</ul>
-								</div>
-
-								<div class="col-lg-6 col-sm-6">
-									<ul>
-										<li>Liga antioqueña de fútbol juvenil</li>
-										<li>Liga antioqueña de fútbol sub-17</li>
-										<li>Torneo comité envigado femenino</li>
-										<li>Torneo comité envigado masculino juvenil</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- End About Us Area -->
-
-		<!-- Start What We Offer Area -->
-		<section class="what-we-offer-area what-we-offer-area-style-two pt-100 pb-70" id="team">
-			<div class="container">
-				<div class="our-personal">
-					<span>Equipo</span>
-					<h2>Nuestros entrenadores</h2>
-				</div>
-
-				<div class="owl-carousel owl-theme what-we-offer-slider">
-					<div class="single-what-we-offer">
-						<a>
-							<img src="{% static 'images/jhony.jpg' %}" alt="Image">
-						</a>
-
-						<div class="what-we-offer-content">
-							<h3>
-								<a>Jhony franco</a>
-							</h3>
-							<p>Entrenador deportivo con una experiencia de mas de 9 años de experiencia, técnico en entrenamiento deportivo, licencia c de entrenadores de futbol, curso en administraciíon deportiva, diplomados de personal trainer, desarrollo humano, actividad física y musculación, actualmente 8 semestre de profesional en deportes.</p>
-						</div>
-					</div>
-
-					<div class="single-what-we-offer">
-						<a>
-							<img src="{% static 'images/guti.jpg' %}" alt="Image">
-						</a>
-
-						<div class="what-we-offer-content">
-							<h3>
-								<a>David gutiérrez</a>
-							</h3>
-							<p>Entrenador en formación deportiva y competencia, técnico en entrenamiento deportivo, diplomados de fisiología en el deporte, iniciación y formación deportiva, actualmente 9 semestre en profesional en deportes.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- End What We Offer Area -->
-
-		<!-- Start Appointment Area -->
-		<section class="appointment-area appointment-area-style-two" id="signup">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-lg-6 pl-0">
-						<div class="appointment-img-2"></div>
-					</div>
-
-					<div class="col-lg-6">
-						<div class="appointment-action ptb-100">
-							<form method="post" id="form-signup">
-								{% csrf_token %}
-								<div class="row">
-									<div class="col-lg-6">
-										<div class="form-group">
-											<input type="text" class="form-control" id="name" name="name" placeholder="Nombres y apellidos" required>
-										</div>
-									</div>
-									<div class="col-lg-6">
-										<div class="form-group">
-											<input type="text" class="form-control" id="phone" name="phone" placeholder="Número teléfono" minlength="10" maxlength="10" required>
-										</div>
-									</div>
-									<div class="col-lg-6">
-										<div class="form-group">
-											<input type="email" class="form-control" id="email" name="email" placeholder="Email">
-										</div>
-									</div>
-									<div class="col-lg-6">
-										<div class="form-group">
-											<input type="text" class="form-control" id="eps" name="eps" placeholder="Eps">
-										</div>
-									</div>
-									<div class="col-lg-6">
-										<div class="form-group">
-											<input type="number" class="form-control" id="age" name="age" placeholder="Edad" required min="0">
-										</div>
-									</div>
-									<div class="col-lg-6">
-										<div class="form-group">
-											<input type="text" class="form-control" id="from-team" name="from-team" placeholder="De qué equipo vienes?">
-										</div>
-									</div>
-									<div class="col-12">
-										<button type="submit" class="default-btn">
-											Regístrate
-										</button>
-									</div>
-
-									<h2>Entrena con nosotros</h2>
-								</div>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- End Appointment Area -->
-
-		<!-- Start Team Area -->
-		<section class="team-area pt-100 pb-70">
-			<div class="container">
-				<div class="our-personal">
-					<span class="top-title">Nuestros deportistas</span>
-					<h2>Deportistas</h2>
-				</div>
-
-				<div class="owl-carousel owl-theme team-slider">
-					<div class="single-team">
-						<div class="team-img">
-							<img src="{% static 'images/imagen7.png' %}" alt="Image">
-
-							<ul class="team-link">
-								<li>
-									<a href="https://www.instagram.com/club_inter_envigado/">
-										<i class="bx bxl-instagram"></i>
-									</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				
-					<div class="single-team">
-						<div class="team-img">
-							<img src="{% static 'images/imagen5.png' %}" alt="Image">
-
-							<ul class="team-link">
-								<li>
-									<a href="https://www.instagram.com/club_inter_envigado/">
-										<i class="bx bxl-instagram"></i>
-									</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				
-					<div class="single-team">
-						<div class="team-img">
-							<img src="{% static 'images/imagen4.png' %}" alt="Image">
-
-							<ul class="team-link">
-								<li>
-									<a href="https://www.instagram.com/club_inter_envigado/">
-										<i class="bx bxl-instagram"></i>
-									</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-
-					<div class="single-team">
-						<div class="team-img">
-							<img src="{% static 'images/jugador1.png' %}" alt="Image">
-
-							<ul class="team-link">
-								<li>
-									<a href="https://www.instagram.com/club_inter_envigado/">
-										<i class="bx bxl-instagram"></i>
-									</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- End Team Area -->
-
-		<!-- Start Footer Area -->
-		<footer class="footer-area pt-100 pb-70" id="contacts">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-3 col-md-6">
-						<div class="single-footer-widget">
-							<ul class="open-close">
-								<li>
-									<span>Horarios de entreno:</span>
-								</li>
-								<li>
-									Lunes: 4:00 PM - 6:00 PM
-								</li>
-								<li>
-									Martes: 8:00 PM - 9:00 PM
-								</li>
-								<li>
-									Jueves: 8:00 PM - 9:00 PM
-								</li>
-							</ul>
-
-							<ul class="social-icon">
-								<li>
-									<span>Síguenos:</span>
-								</li>
-								<li>
-									<a href="https://www.instagram.com/club_inter_envigado/" target="_blank">
-										<i class="bx bxl-instagram"></i>
-									</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-
-					<div class="col-lg-3 col-md-6">
-						<div class="single-footer-widget">
-							<h3>Contáctanos</h3>
-
-							<ul class="address">
-								<li>
-									<i class="bx bx-envelope"></i>
-									<a href="mailto:cdinterenvigado@gmail.com">cdinterenvigado@gmail.com</a>
-								</li>
-								<li>
-									<i class="bx bx-phone"></i>
-									<p>+57 324 739 6334</p>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
-		<!-- End Footer Area -->
-		<div class="copy-right-area">
-			<div class="container">
-				<p>2024 © Corporación inter ❤️⚽</p>
-				<p>Creado por: <a href="https://github.com/Yesid9126" target="_blank">Yesid Franco</a></p>
-			</div>
-		</div>
-        <!-- Jquery Min JS -->
-        <script src="{% static 'js/jquery.min.js' %}"></script> 
-        <!-- Bootstrap Bundle Min JS -->
-        <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
-        <!-- Meanmenu Min JS -->
-		<script src="{% static 'js/meanmenu.min.js' %}"></script>
-		<!-- Owl Carousel Min JS -->
-		<script src="{% static 'js/owl.carousel.min.js' %}"></script>
-		<!-- Wow Min JS -->
-        <script src="{% static 'js/wow.min.js' %}"></script>
-        <!-- Nice Select Min JS -->
-		<script src="{% static 'js/nice-select.min.js' %}"></script>
-        <!-- Magnific Popup Min JS -->
-		<script src="{% static 'js/magnific-popup.min.js' %}"></script>
-		<!-- Mixitup Min JS --> 
-		<script src="{% static 'js/mixitup.min.js' %}"></script>
-		<!-- Datepicker Min JS --> 
-		<script src="{% static 'js/bootstrap-datepicker.min.js' %}"></script>
-		<!-- Form Validator Min JS -->
-		<script src="{% static 'js/form-validator.min.js' %}"></script>
-		<!-- Contact JS -->
-		<script src="{% static 'js/contact-form-script.js' %}"></script>
-		<!-- Ajaxchimp Min JS -->
-		<script src="{% static 'js/ajaxchimp.min.js' %}"></script>
-        <!-- Custom JS -->
-		<script src="{% static 'js/custom.js' %}"></script>
-
-		<!-- Asegúrate de incluir la referencia a sweetalert2 -->
-	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-
-	<!-- Agrega este script para manejar la presentación de la alerta -->
-	<script>
-		document.addEventListener('DOMContentLoaded', function () {
-			const form = document.getElementById('form-signup');
-			form.addEventListener('submit', function (event) {
-				event.preventDefault();
-
-				// Recopila los datos del formulario
-				const formData = new FormData(form);
-				// Realiza la solicitud AJAX
-				fetch('/', {
-					method: 'POST',
-					body: formData,
-					csrfmiddlewaretoken: '{{ csrf_token }}'
-				})
-				.then(response => response.json())
-				.then(data => {
-					Swal.fire({
-						title: '¡Registro exitoso!',
-						text: 'Pronto nos comunicaremos contigo para darte indicaciones.',
-						icon: 'success'
-					});
-				})
-				.catch(error => {
-					Swal.fire({
-						title: '¡Error!',
-						text: 'Hubo un problema al procesar tu registro. comunicate a este número 324 739 6334 y te daremos solución.',
-						icon: 'error'
-					});
-				});
-			});
-		});
-	</script>
-
-    </body>
+          // Recopila los datos del formulario
+          const formData = new FormData(form);
+          // Realiza la solicitud AJAX
+          fetch('/', {
+              method: 'POST',
+              body: formData,
+              csrfmiddlewaretoken: '{{ csrf_token }}'
+            })
+            .then(response => response.json())
+            .then(data => {
+              Swal.fire({
+                title: '¡Registro exitoso!',
+                text: 'Pronto nos comunicaremos contigo para darte indicaciones.',
+                icon: 'success'
+              });
+            })
+            .catch(error => {
+              Swal.fire({
+                title: '¡Error!',
+                text: 'Hubo un problema al procesar tu registro. comunicate a este número 324 739 6334 y te daremos solución.',
+                icon: 'error'
+              });
+            });
+        });
+      });
+    </script>
+  </body>
 </html>
