@@ -28,7 +28,7 @@ certificatesResolvers:
 http:
   routers:
     web-secure-router:
-      rule: 'Host(`corporacioninter.net`) || Host(`www.corporacioninter.net`)'
+      rule: 'Host(`corporacioninter.co`) || Host(`www.corporacioninter.co`)'
       entryPoints:
         - web-secure
       middlewares:
